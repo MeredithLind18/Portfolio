@@ -389,4 +389,42 @@ body {
            width: 100%;
        }
    }
+
+@media screen and (max-width: 768px){
+  .card-container{
+    display: grid;
+    justify-content: center;
+    grid-direction: column;
+    margin: 40px 40px 20px 40px;
+    
+  }
+  
+.card-container-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 40px 40px 20px 40px;
+    max-width: 1000px;
+}
+  .card-1 {
+    background-color: #FBF6F8;
+    width: 100%;
+    margin: 0px 0px 0px 0px ;
+  }
+  .card-2 {
+    background-color: #FBF6F8;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+  }
+  .card-3 {
+    background-color: #FBF6F8;
+    width: 100%;
+    margin: 0px 0px 15px 0px; 
+  }
+  .card-4 {
+    background-color: #FBF6F8;
+    width: 100%;
+    margin: 15px 0px 0px 0px; 
+  }
+}
    
