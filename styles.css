@@ -264,11 +264,11 @@ body {
    
    /* Define Card Styles */
    
-   .card-container {
+      .card-container {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: auto auto 20px auto;
+       margin: auto auto auto auto;
        max-width: 1000px;
    }
    
@@ -276,19 +276,19 @@ body {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: 20px auto auto auto;
+       margin: auto auto auto auto;
        max-width: 1000px;
    }
    
    .card-1 {
        background-color: #FBF6F8;
-       width: 50%;
-       margin: 30px auto 20px auto ;
+       width: 500px;
+       margin: auto auto auto auto ;
    }
    .card-2 {
        background-color: #FBF6F8;
-       width: 50%;
-       margin: 30px auto 20px auto;
+       width: 500px;
+       margin: auto auto 20px auto;
    }
    
    .card-3 {
