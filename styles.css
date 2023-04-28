@@ -6,7 +6,7 @@ body {
     margin: 0; 
    }
    
-   /* Define Default Global Font Sizes */
+   /* Global Font Sizes */
    
    h1 {
        font-size: 50px;
@@ -50,7 +50,7 @@ body {
        font-weight: var(--bold);
    }
    
-   /*Define Global Helper Styles*/
+   /*Global Styles*/
    
    .center {
        text-align: center;
@@ -91,7 +91,7 @@ body {
        margin-bottom: 20px;
    }
    
-   /*Define Navigation Styles*/
+   /*Nav Style*/
    
    nav {
        background-color: #DAA1B5;
@@ -147,9 +147,8 @@ body {
      -webkit-touch-callout: none;
    }
    
-   /*
-    * Just a quick hamburger
-    */
+   /*Hamburger*/
+
    #menuToggle span
    {
      display: block;
@@ -176,10 +175,8 @@ body {
      transform-origin: 0% 100%;
    }
    
-   /* 
-    * Transform all the slices of hamburger
-    * into a crossmark.
-    */
+   /*Transform all the slices of hamburgerinto a crossmark - Melisssa*/
+
    #menuToggle input:checked ~ span
    {
      opacity: 1;
@@ -187,27 +184,23 @@ body {
      background: #000000;
    }
    
-   /*
-    * But let's hide the middle one.
-    */
+   /*But let's hide the middle one - Melissa*/
+
    #menuToggle input:checked ~ span:nth-last-child(3)
    {
      opacity: 0;
      transform: rotate(0deg) scale(0.2, 0.2);
    }
    
-   /*
-    * Ohyeah and the last one should go the other direction
-    */
+   /*Ohyeah and the last one should go the other direction - Melissa*/
+
    #menuToggle input:checked ~ span:nth-last-child(2)
    {
      transform: rotate(-45deg) translate(0, -1px);
    }
    
-   /*
-    * Make this absolute positioned
-    * at the top left of the screen
-    */
+   /*Make this absolute positioned at the top left of the screen - Melissa*/
+
    #menu
    {
      position: absolute;
@@ -219,7 +212,8 @@ body {
      background: #ededed;
      list-style-type: none;
      -webkit-font-smoothing: antialiased;
-     /* to stop flickering of text in safari */
+       
+     /*to stop flickering of text in safari - Melissa*/
      
      transform-origin: 0% 0%;
      transform: translate(-100%, 0);
@@ -233,13 +227,13 @@ body {
      font-size: 22px;
    }
    
-   /*
-    * And let's slide it in from the left
-    */
+   /*And let's slide it in from the left - Melissa*/
+
    #menuToggle input:checked ~ ul
    {
      transform: none;
    }
+
    /* Define Hero Styles */
     
    .hero-container {
@@ -274,7 +268,7 @@ body {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: auto auto auto auto;
+       margin: auto auto 20px auto;
        max-width: 1000px;
    }
    
@@ -282,31 +276,31 @@ body {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: auto auto 60px auto;
+       margin: 20px auto auto auto;
        max-width: 1000px;
    }
    
    .card-1 {
        background-color: #FBF6F8;
-       width: 70%;
-       margin: 30px 0px 30px 0px ;
+       width: 50%;
+       margin: 30px auto 20px auto ;
    }
    .card-2 {
        background-color: #FBF6F8;
-       width: 30%;
-       margin: 30px 0px 30px 0px;
+       width: 50%;
+       margin: 30px auto 20px auto;
    }
    
    .card-3 {
        background-color: #f2f2f2;
        width: 480px;
-       margin: 60px 20px 20px 0px;
+       margin: 20px 20px 20px 0px;
    }
    
    .card-4 {
        background-color: #f2f2f2;
        width: 480px;
-       margin: 60px 0px 20px 20px;
+       margin: 20px 0px 20px 20px;
    }
    
    .card a:hover {
