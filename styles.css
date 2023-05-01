@@ -6,7 +6,7 @@ body {
     margin: 0; 
    }
    
-   /* Global Font Sizes */
+   /* Define Default Global Font Sizes */
    
    h1 {
        font-size: 50px;
@@ -20,8 +20,6 @@ body {
    h3 {
        font-size: 24px;
        font-family: 'Abel', sans-serif;
-       padding-bottom:
-   
    }
    
    h4 {
@@ -50,7 +48,7 @@ body {
        font-weight: var(--bold);
    }
    
-   /*Global Styles*/
+   /*Define Global Helper Styles*/
    
    .center {
        text-align: center;
@@ -91,7 +89,7 @@ body {
        margin-bottom: 20px;
    }
    
-   /*Nav Style*/
+   /*Define Navigation Styles*/
    
    nav {
        background-color: #DAA1B5;
@@ -147,8 +145,9 @@ body {
      -webkit-touch-callout: none;
    }
    
-   /*Hamburger*/
-
+   /*
+    * Just a quick hamburger
+    */
    #menuToggle span
    {
      display: block;
@@ -175,8 +174,10 @@ body {
      transform-origin: 0% 100%;
    }
    
-   /*Transform all the slices of hamburgerinto a crossmark - Melisssa*/
-
+   /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
    #menuToggle input:checked ~ span
    {
      opacity: 1;
@@ -184,23 +185,27 @@ body {
      background: #000000;
    }
    
-   /*But let's hide the middle one - Melissa*/
-
+   /*
+    * But let's hide the middle one.
+    */
    #menuToggle input:checked ~ span:nth-last-child(3)
    {
      opacity: 0;
      transform: rotate(0deg) scale(0.2, 0.2);
    }
    
-   /*Ohyeah and the last one should go the other direction - Melissa*/
-
+   /*
+    * Ohyeah and the last one should go the other direction
+    */
    #menuToggle input:checked ~ span:nth-last-child(2)
    {
      transform: rotate(-45deg) translate(0, -1px);
    }
    
-   /*Make this absolute positioned at the top left of the screen - Melissa*/
-
+   /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
    #menu
    {
      position: absolute;
@@ -212,8 +217,7 @@ body {
      background: #ededed;
      list-style-type: none;
      -webkit-font-smoothing: antialiased;
-       
-     /*to stop flickering of text in safari - Melissa*/
+     /* to stop flickering of text in safari */
      
      transform-origin: 0% 0%;
      transform: translate(-100%, 0);
@@ -227,13 +231,13 @@ body {
      font-size: 22px;
    }
    
-   /*And let's slide it in from the left - Melissa*/
-
+   /*
+    * And let's slide it in from the left
+    */
    #menuToggle input:checked ~ ul
    {
      transform: none;
    }
-
    /* Define Hero Styles */
     
    .hero-container {
@@ -264,43 +268,43 @@ body {
    
    /* Define Card Styles */
    
-      .card-container {
+   .card-container {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: auto auto auto auto;
-       max-width: 1000px;
+       margin: 0px auto 0px auto;
+       max-width: 980px;
    }
    
    .card-container-2 {
        display: flex;
        flex-flow: row wrap;
        justify-content: center;
-       margin: auto auto auto auto;
+       margin: 0px auto auto auto;
        max-width: 1000px;
    }
    
    .card-1 {
        background-color: #FBF6F8;
-       width: 500px;
-       margin: auto auto auto auto ;
+       width: 50%;
+       
    }
    .card-2 {
        background-color: #FBF6F8;
-       width: 500px;
-       margin: auto auto 20px auto;
+       width: 50%;
+      
    }
    
    .card-3 {
        background-color: #f2f2f2;
        width: 480px;
-       margin: 20px 20px 20px 0px;
+       margin: 20px auto 40px auto;
    }
    
    .card-4 {
        background-color: #f2f2f2;
        width: 480px;
-       margin: 20px 0px 20px 20px;
+       margin: 20px auto 40px auto;
    }
    
    .card a:hover {
@@ -324,101 +328,87 @@ body {
    
    /*Define Media Queries Which Tell the Code How Resize*/
    
-   @media screen and (max-width: 768px) {
-     .nav-mobile {
-       display: block;
-     }
-   
-       h1 {
-           font-size: 24px;
-       }
-   
-       h2 {
-           font-size: 18px;
-       }
-   
-       .hero-container {
-           display: flex;
-           flex-direction: column;
-       }
-   
-       .hero-container_img {
-           min-width: 100%;
-       }
-   
-       .hero-container_copy {
-           min-width: 100%;
-           margin: 20px;
-           padding: 0;
-           text-align: center;
-       }
-   
-   }
-   
-   @media screen and (max-width: 1024px) {
-       nav {
-           display: none;
-       }
-       .nav-mobile {
-       display: block;
-       }
-     
-       p {
-           font-size: 14px;
-       }
-   
-       .hero-container_img {
-           width: 50%;
-       }
-   
-       .hero-container_copy {
-           width: 50%;
-       }
-   
-       .card {
-               width: 100%;
-           }
-   
-       .card img {
-           width: 100%;
-       }
-   }
-
-@media screen and (max-width: 768px){
-  .card-container{
-    display: grid;
-    justify-content: center;
-    grid-direction: column;
-    margin: 40px 40px 20px 40px;
-    
-  }
+   @media only screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    .nav-mobile {
+    display: block;
+    }
   
-.card-container-2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 40px 40px 20px 40px;
-    max-width: 1000px;
-}
-  .card-1 {
-    background-color: #FBF6F8;
-    width: 100%;
-    margin: 0px 0px 0px 0px ;
+    p {
+        font-size: 14px;
+    }
+
+    .hero-container_img {
+        width: 50%;
+    }
+
+    .hero-container_copy {
+        width: 50%;
+    }
+
+    .card {
+            width: 100%;
+        }
+
+    .card img {
+        width: 90%;
+    }
+    .card-container {
+        display:grid;
+        grid-column: span;} 
+        .card-1 {
+            background-color: #FBF6F8;
+            width: 100%;
+            margin: 40px 0px 0px 0px ;
+          }
+          .card-2 {
+            background-color: #FBF6F8;
+            width: 100%;
+            margin: 00px 0px 20px 0px;
+          }
+          .card-3 {
+            background-color: #FBF6F8;
+            width: 100%;
+            margin: 20px 0px 20px 0px; 
+            justify-content: center;
+          }
+          .card-4 {
+            background-color: #FBF6F8;
+            width: 100%;
+            margin: 20px 0px 40px 0px; 
+            justify-content: center;
+          }
+        
+    }
+  
+
+
+   @media only screen and (max-width: 768px) {
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+
+    .hero-container_img {
+        min-width: 100%;
+    }
+
+    .hero-container_copy {
+        min-width: 100%;
+        margin: 20px;
+        padding: 0;
+        text-align: center;
+    }
+  
   }
-  .card-2 {
-    background-color: #FBF6F8;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-  }
-  .card-3 {
-    background-color: #FBF6F8;
-    width: 100%;
-    margin: 0px 0px 15px 0px; 
-  }
-  .card-4 {
-    background-color: #FBF6F8;
-    width: 100%;
-    margin: 15px 0px 0px 0px; 
-  }
-}
-   
