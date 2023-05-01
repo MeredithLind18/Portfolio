@@ -6,7 +6,7 @@ body {
     margin: 0; 
    }
    
-   /* Define Default Global Font Sizes */
+   /* Global Font Sizes */
    
    h1 {
        font-size: 50px;
@@ -48,7 +48,7 @@ body {
        font-weight: var(--bold);
    }
    
-   /*Define Global Helper Styles*/
+   /*Global Helper Styles*/
    
    .center {
        text-align: center;
@@ -89,7 +89,7 @@ body {
        margin-bottom: 20px;
    }
    
-   /*Define Navigation Styles*/
+   /*Navigation Style*/
    
    nav {
        background-color: #DAA1B5;
@@ -145,9 +145,7 @@ body {
      -webkit-touch-callout: none;
    }
    
-   /*
-    * Just a quick hamburger
-    */
+   /* Just a quick hamburger - Melissa-Ann */
    #menuToggle span
    {
      display: block;
@@ -174,10 +172,8 @@ body {
      transform-origin: 0% 100%;
    }
    
-   /* 
-    * Transform all the slices of hamburger
-    * into a crossmark.
-    */
+   /* Transform all the slices of hamburger into a crossmark. - Melissa-Ann */
+
    #menuToggle input:checked ~ span
    {
      opacity: 1;
@@ -185,27 +181,22 @@ body {
      background: #000000;
    }
    
-   /*
-    * But let's hide the middle one.
-    */
+   /* But let's hide the middle one. - Melissa-Ann */
+
    #menuToggle input:checked ~ span:nth-last-child(3)
    {
      opacity: 0;
      transform: rotate(0deg) scale(0.2, 0.2);
    }
    
-   /*
-    * Ohyeah and the last one should go the other direction
-    */
+   /* Ohyeah and the last one should go the other direction - Melissa-Ann */
+
    #menuToggle input:checked ~ span:nth-last-child(2)
    {
      transform: rotate(-45deg) translate(0, -1px);
    }
    
-   /*
-    * Make this absolute positioned
-    * at the top left of the screen
-    */
+   /*Make this absolute positioned at the top left of the screen - Melissa-Ann */
    #menu
    {
      position: absolute;
@@ -231,14 +222,13 @@ body {
      font-size: 22px;
    }
    
-   /*
-    * And let's slide it in from the left
-    */
+   /* And let's slide it in from the left - Melissa-Ann */
+
    #menuToggle input:checked ~ ul
    {
      transform: none;
    }
-   /* Define Hero Styles */
+   /* Hero Styles */
     
    .hero-container {
        background-color: white;
@@ -266,7 +256,7 @@ body {
        padding: 5%;
    }
    
-   /* Define Card Styles */
+   /* Card Styles */
    
    .card-container {
        display: flex;
@@ -326,7 +316,7 @@ body {
        margin-top: 30px;
    }
    
-   /*Define Media Queries Which Tell the Code How Resize*/
+   /* Media Queries */
    
    @media only screen and (max-width: 1024px) {
     nav {
