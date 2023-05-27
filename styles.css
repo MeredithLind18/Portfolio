@@ -229,33 +229,49 @@ body {
      transform: none;
    }
    /* Hero Styles */
-    
+ 
    .hero-container {
-       background-color: white;
-       display: flex;
-       align-items: center;
-       margin-bottom: 60px;
-   }
-   
-   .hero-container_img {
-      width: 40%;
-   }
-   
-   .hero-container_img img {
-       display: flex;
-       width: 50%;
-       align-items: center;
-       justify-content: center;
-       margin: auto;
-       border-radius: 50%;
-       transform: rotate(-3deg);
-   }
-   
-   .hero-container_copy {
-       width: 50%;
-       padding: 5%;
-   }
-   
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    }
+
+
+    .hero-container_img img {
+        border-radius: 50%;
+        display: block;
+        margin: 100px auto;
+        width: 40%;
+    }
+
+    .hero-container_img {
+        position:relative;
+        background-image: url(PortfolioPics/Gif-Circle.jpg);
+        background-position: center center;
+        background-size: 47%;
+        background-repeat: no-repeat;
+        width: 50%;
+        animation: rotateAnimation 2s linear;
+    }
+    
+    @keyframes rotateAnimation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+    .hero-container_copy {
+        width: 50%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+
    /* Card Styles */
    
    .card-container {
