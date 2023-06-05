@@ -99,11 +99,13 @@ body {
        padding-right: 20px;
        position: sticky;
        top: 0;
+       color: white;   
    }
    
    .nav-link {
        display: flex;
        padding: 20px;
+       color: white;
    }
    
    .nav-mobile {
@@ -125,7 +127,7 @@ body {
    #menuToggle a
    {
      text-decoration: none;
-     color: #000000;
+     color: white;
      transition: color 0.3s ease;
    }
    
@@ -235,6 +237,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    margin-right: 50px;
     }
 
 
